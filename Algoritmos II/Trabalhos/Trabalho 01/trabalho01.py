@@ -110,7 +110,7 @@ class HashTable:
                     else: 
                         print(f"{item}")
                 return node
-        print(f"{chave}\nNão encontrado.")
+        print(f"{chave}\nNão encontrado")
         return None
 
     #funcao que imprime a tabela toda
@@ -119,6 +119,8 @@ class HashTable:
             if self.slots[i] != None:
                 elemento = self.slots[i].preOrder(self.slots[i].raiz)
                 print(elemento)
+            else:
+                print('None')
 
 #------------------------------------------------------------------------------------------------------------------------------------------
 #LEITURA DE ARQUIVO
